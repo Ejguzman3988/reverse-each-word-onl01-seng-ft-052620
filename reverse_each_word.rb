@@ -12,9 +12,9 @@
 
 def reverse_each_word(sentence)
   new_sentence = sentence.split(" ")
-  
+  reverse_sentence = []
   new_sentence.collect do |word|
-    word.reverse
+    reverse_sentence << word.reverse
 
   end
   
