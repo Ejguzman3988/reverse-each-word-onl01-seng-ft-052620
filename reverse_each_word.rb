@@ -12,9 +12,10 @@
 
 def reverse_sentence(sentence)
   new_sentence = sentence.split(" ")
-  reverse_sentence = ''
-  new_sentence.collect do |word|
-    
-    reverse_sentence << word.reverse
   
+  new_sentence.collect do |word|
+    word.reverse
+
   end
+  
+  new_sentence.join
